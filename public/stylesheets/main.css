@@ -13,3 +13,18 @@
 #delete-form {
      display: inline
 }
+
+.img-thumbnailnew{
+    
+    height: 230px;
+    overflow: hidden;
+}
+
+/* .row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+} */

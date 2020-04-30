@@ -18,28 +18,33 @@
         </nav> -->
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">YelpCamp</a>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="nav navbar-nav ml-auto">
-                <% if(!currentUser) { %>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/login">Login</a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/register">Sign Up</a>
-                  </li>
-                <% } else { %>
-                  <li class="nav-item active"> 
-                    <a class="nav-link" href="#">Signed in as <%= currentUser.username %> </a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link" href="/logout">Logout</a>
-                  </li>
-                <% } %>
-              </ul>
-            </div>
-          </nav>
+          <!-- <button class="navbar-toggler hidden-xs-up" type="button" data-toggle="collapse" data-target="#collapseNav">
+            &#9776;
+          </button> -->
+          <!-- <div class="collapse navbar-toggleable-xs" id="collapseNav"> -->
+              <!-- <img class="navbar-brand" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR-SsSReMqLnvncaPs_BTKY4C4Qu_rLSz-Ls5nGtxdaxR6sJo9a&usqp=CAU"> -->
+              <a class="navbar-brand" href="/">YelpCamp</a>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav navbar-nav ml-auto">
+                  <% if(!currentUser) { %>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/register">Sign Up</a>
+                    </li>
+                  <% } else { %>
+                    <li class="nav-item active"> 
+                      <a class="nav-link" href="#">Signed in as <%= currentUser.username %> </a>
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/logout">Logout</a>
+                    </li>
+                  <% } %>
+                </ul>
+          <!-- </div> -->
+        </nav>
+        </div>
           <div class="container">
             <% if(error && error.length > 0) {%>
               <div class="alert alert-danger" role="alert"> 
